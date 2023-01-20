@@ -30,12 +30,13 @@
     - Super Fast build algorithm
     - Image optimization
     - Caching while development
-    - Compression of variables
+    - Compression of variables(JavaScript compression), Image compression
     - Compatible with older version of browsers
     - can enable HTTPS on development env
     - parcel manages port numbers
     - consistent Hashing Algorithm to do all bundling
     - Zero config bundler
+    - Tree Shaking : Removing unwanted code
 - We should put .parcel-cache in gitignore.
 - Transitive Dependencies : We have our package manager which handles and takes care of our transitive dependencies of our code 
 
