@@ -1,3 +1,4 @@
+# Chapter 01 - Inception
 ## 1. What is Emmet?
 - Emmet is a plugin for text editors that allows for the rapid creation of HTML and CSS code using a shorthand syntax.
 - Write more code quickly.
