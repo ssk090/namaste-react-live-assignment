@@ -1,3 +1,4 @@
+# Chapter 02 - Igniting our App
 ## Notes
 - Bundler : vite, parcel, webpack
 - create react app uses webpack bundler
