@@ -1,3 +1,4 @@
+## Notes
 - Bundler : vite, parcel, webpack
 - create react app uses webpack bundler
 - npm does not stands for Node package manager, check it official website, it is no where written
@@ -42,6 +43,7 @@
 - https://stackoverflow.com/questions/22343224/whats-the-difference-between-tilde-and-caret-in-package-json
 - https://browserslist.dev/
 
+# Assignments
 ## 1. What is `NPM` ?
 - NPM (short for Node Package Manager) is a package manager for the JavaScript programming language.
 - It is the default package manager for the JavaScript runtime environment Node.js.
