@@ -7,3 +7,5 @@
 ## [Chapter 04 - Talk is Cheap, show me the code](https://github.com/ssk090/namaste-react-live-assignment/tree/master/04%20-%20Talk%20is%20Cheap%2C%20show%20me%20the%20code)
 
 ## [Chapter 05 - Let's Get Hooked!](https://github.com/ssk090/namaste-react-live-assignment/tree/master/05%20-%20Let's%20Get%20Hooked!)
+
+## [Chapter 06 - Exploring the world](https://github.com/ssk090/namaste-react-live-assignment/tree/master/06%20-%20Exploring%20the%20world)
