@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 const Title = () => (
   <a href="/">
     <img
@@ -9,18 +11,36 @@ const Title = () => (
 );
 
 const Header = () => {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
   return (
-    <div className="header">
+    <header className="flex items-center justify-between p-4 bg-gray-900 text-white">
       <Title />
-      <div className="nav-items">
-        <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Contact</li>
-          <li>Cart</li>
+      <nav className="flex">
+        <ul className="flex">
+          <li className="mr-6">Home</li>
+          <li className="mr-6">About</li>
+          <li className="mr-6">Contact</li>
+          <li className="mr-6">Cart</li>
         </ul>
+      </nav>
+      <div className="flex">
+        {isLoggedIn ? (
+          <button
+            onClick={() => setIsLoggedIn(false)}
+            className="bg-red-500 px-4 py-2 rounded-lg text-white"
+          >
+            Logout
+          </button>
+        ) : (
+          <button
+            onClick={() => setIsLoggedIn(true)}
+            className="bg-green-500 px-4 py-2 rounded-lg text-white"
+          >
+            Login
+          </button>
+        )}
       </div>
-    </div>
+    </header>
   );
 };
 
