@@ -63,7 +63,7 @@ const Body = () => {
       {allRestaurants?.length === 0 ? (
         <Shimmer />
       ) : (
-        <div className="restaurant-list">
+        <div className="restaurant-list" style={{ marginBottom: "75px" }}>
           {filteredRestaurants?.map((restraunt) => {
             return (
               <Link

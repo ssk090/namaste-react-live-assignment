@@ -28,19 +28,23 @@ const Header = () => {
       </nav>
       <div className="flex">
         {isLoggedIn ? (
-          <button
-            onClick={() => setIsLoggedIn(false)}
-            className="bg-red-500 px-4 py-2 rounded-lg text-white"
-          >
-            Logout
-          </button>
+          <Link to="/">
+            <button
+              onClick={() => setIsLoggedIn(false)}
+              className="bg-red-500 px-4 py-2 rounded-lg text-white"
+            >
+              Logout
+            </button>
+          </Link>
         ) : (
-          <button
-            onClick={() => setIsLoggedIn(true)}
-            className="bg-green-500 px-4 py-2 rounded-lg text-white"
-          >
-            Login
-          </button>
+          <Link to="/login">
+            <button
+              onClick={() => setIsLoggedIn(true)}
+              className="bg-green-500 px-4 py-2 rounded-lg text-white"
+            >
+              Login
+            </button>
+          </Link>
         )}
       </div>
     </header>

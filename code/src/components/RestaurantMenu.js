@@ -27,7 +27,7 @@ const RestaurantMenu = () => {
   if (!restraunt) return <Shimmer />;
 
   return (
-    <div className="flex">
+    <div className="flex mb-[100px]">
       <div className="h-[80vh]">
         <h1 className="font-bold">Restraunt ID : {restraunt.id}</h1>
         <h1 className="font-bold text-2xl">{restraunt.name}</h1>
