@@ -1,7 +1,8 @@
 import { restrautList } from "../contants";
-import RestrauntCard from "./RestrauntCard";
+import RestaurantCard from "./RestaurantCard";
 import { useState, useEffect } from "react";
 import Shimmer from "./Shimmer";
+import { Link } from "react-router-dom";
 
 //Config Driven UI
 
@@ -30,8 +31,6 @@ const Body = () => {
     setFilteredRestaurants(json?.data?.cards[2]?.data?.data?.cards);
   }
 
-  console.log("render");
-
   if (!allRestaurants) return null;
 
   // if (filteredRestaurants?.length === 0)
@@ -40,10 +39,10 @@ const Body = () => {
   //Conditional Rendering
   return (
     <>
-      <div class="flex justify-center mx-auto mt-3">
+      <div className="h-full flex justify-center mx-auto mt-3">
         <input
           type="text"
-          class="w-500 p-2 border border-gray-500 rounded-lg"
+          className="w-500 p-2 border border-gray-500 rounded-lg"
           placeholder="Search..."
           value={searchText}
           onChange={(e) => {
@@ -52,7 +51,7 @@ const Body = () => {
           }}
         />
         <button
-          class="bg-blue-500 hover:bg-blue-600 text-white p-2 rounded-lg ml-4"
+          className="bg-blue-500 hover:bg-blue-600 text-white p-2 rounded-lg ml-4"
           onClick={() => {
             const data = filterData(searchText, allRestaurants);
             setFilteredRestaurants(data);
@@ -65,9 +64,14 @@ const Body = () => {
         <Shimmer />
       ) : (
         <div className="restaurant-list">
-          {filteredRestaurants?.map((restaurant) => {
+          {filteredRestaurants?.map((restraunt) => {
             return (
-              <RestrauntCard {...restaurant.data} key={restaurant.data.id} />
+              <Link
+                className="restaurant-list"
+                to={"/restraunt/" + restraunt.data.id}
+              >
+                <RestaurantCard {...restraunt.data} key={restraunt.data.id} />
+              </Link>
             );
           })}
         </div>

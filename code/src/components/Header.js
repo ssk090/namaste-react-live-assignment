@@ -1,12 +1,9 @@
 import { useState } from "react";
-
+import Logo from "../../assets/logo.png";
+import { Link } from "react-router-dom";
 const Title = () => (
   <a href="/">
-    <img
-      className="logo"
-      alt="logo"
-      src="https://yt3.ggpht.com/ytc/AMLnZu_EC-ECXAxRAixWGEfMsE1rdSoetBHyxmLNdtCB=s900-c-k-c0x00ffffff-no-rj"
-    />
+    <img className="logo" alt="logo" src={Logo} />
   </a>
 );
 
@@ -17,10 +14,16 @@ const Header = () => {
       <Title />
       <nav className="flex">
         <ul className="flex">
-          <li className="mr-6">Home</li>
-          <li className="mr-6">About</li>
-          <li className="mr-6">Contact</li>
-          <li className="mr-6">Cart</li>
+          <Link to="/">
+            <li className="mr-6 hover:underline">Home</li>
+          </Link>
+          <Link to="/about">
+            <li className="mr-6 hover:underline">About</li>
+          </Link>
+          <Link to="/contact">
+            <li className="mr-6 hover:underline">Contact</li>
+          </Link>
+          <li className="mr-6 hover:underline">Cart</li>
         </ul>
       </nav>
       <div className="flex">

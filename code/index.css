@@ -23,10 +23,12 @@
   border: 1px solid black;
   padding: 10px;
   margin: 10px;
+  border-radius: 5px;
 }
 
 .card > img {
   width: 100%;
+  border-radius: 5px;
 }
 
 .restaurant-list {
