@@ -8,4 +8,6 @@
 
 ## [Chapter 05 - Let's Get Hooked!](https://github.com/ssk090/namaste-react-live-assignment/tree/master/05%20-%20Let's%20Get%20Hooked!)
 
-## [Chapter 06 - Exploring the world](https://github.com/ssk090/namaste-react-live-assignment/tree/master/06%20-%20Exploring%20the%20world)
+## [Chapter 06 - Exploring the world](https://github.com/ssk090/namaste-react-live-assignment/tree/master/06%20-%20Exploring%20the%20world)\
+
+## [Chapter 07 - Finding the path](https://github.com/ssk090/namaste-react-live-assignment/tree/master/07%20-%20Finding%20the%20path)
