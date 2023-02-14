@@ -11,3 +11,5 @@
 ## [Chapter 06 - Exploring the world](https://github.com/ssk090/namaste-react-live-assignment/tree/master/06%20-%20Exploring%20the%20world)
 
 ## [Chapter 07 - Finding the path](https://github.com/ssk090/namaste-react-live-assignment/tree/master/07%20-%20Finding%20the%20path)
+
+## [Chapter 08 - Let's get Classy](https://github.com/ssk090/namaste-react-live-assignment/tree/master/08%20-%20Let's%20get%20Classy)
