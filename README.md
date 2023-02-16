@@ -15,3 +15,5 @@
 ## [Chapter 08 - Let's get Classy](https://github.com/ssk090/namaste-react-live-assignment/tree/master/08%20-%20Let's%20get%20Classy)
 
 ## [Chapter 09 - Optimizing out App](https://github.com/ssk090/namaste-react-live-assignment/tree/master/09%20-%20Optimizing%20out%20App)
+
+## [Chapter 10 - Jo dikhta hai vo bikta hai](https://github.com/ssk090/namaste-react-live-assignment/tree/master/10%20-%20Jo%20dikhta%20hai%20vo%20bikta%20hai)
