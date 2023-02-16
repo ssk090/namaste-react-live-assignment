@@ -3,14 +3,14 @@ import Logo from "../../assets/logo.png";
 import { Link } from "react-router-dom";
 const Title = () => (
   <a href="/">
-    <img className="logo" alt="logo" src={Logo} />
+    <img className="w-[100px]" alt="logo" src={Logo} />
   </a>
 );
 
 const Header = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   return (
-    <header className="flex items-center justify-between p-4 bg-gray-900 text-white">
+    <header className="flex items-center justify-between p-4 bg-gray-900 text-white shadow shadow-lg">
       <Title />
       <nav className="flex">
         <ul className="flex">

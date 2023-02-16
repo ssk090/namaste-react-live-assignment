@@ -40,7 +40,7 @@ const Body = () => {
       <div className="h-full flex justify-center mx-auto mt-3">
         <input
           type="text"
-          className="w-500 p-2 border border-gray-500 rounded-lg"
+          className="w-500 p-2 border border-gray-500 rounded-lg focus:bg-blue-100"
           placeholder="Search..."
           value={searchText}
           onChange={(e) => {
@@ -62,11 +62,14 @@ const Body = () => {
       {allRestaurants?.length === 0 ? (
         <Shimmer />
       ) : (
-        <div className="restaurant-list" style={{ marginBottom: "75px" }}>
+        <div
+          className="flex flex-wrap justify-center"
+          style={{ marginBottom: "75px" }}
+        >
           {filteredRestaurants?.map((restraunt) => {
             return (
               <Link
-                className="restaurant-list"
+                className="flex flex-wrap justify-center"
                 to={"/restraunt/" + restraunt.data.id}
               >
                 <RestaurantCard {...restraunt.data} key={restraunt.data.id} />
