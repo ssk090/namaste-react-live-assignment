@@ -24,6 +24,9 @@ const Header = () => {
             <li className="mr-6 hover:underline">Contact</li>
           </Link>
           <li className="mr-6 hover:underline">Cart</li>
+          <Link to="/instamart">
+            <li className="mr-6 hover:underline">Instamart</li>
+          </Link>
         </ul>
       </nav>
       <div className="flex">

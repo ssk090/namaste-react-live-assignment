@@ -12,7 +12,7 @@ const Error = () => {
           😔 <br />
           {status} - {statusText}
         </h1>
-        <p className="text-gray-600">{error.message}</p>
+        <p className="text-gray-600">{error?.message}</p>
       </div>
     </div>
   );

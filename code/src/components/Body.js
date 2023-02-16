@@ -3,20 +3,15 @@ import RestaurantCard from "./RestaurantCard";
 import { useState, useEffect } from "react";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
-
-//Config Driven UI
-
-function filterData(searchText, restraunts) {
-  return restraunts.filter((restraunt) =>
-    restraunt?.data?.name?.toLowerCase()?.includes(searchText?.toLowerCase())
-  );
-}
+import { filterData } from "../utils/helper";
+import useOnline from "../utils/useOnline";
 
 const Body = () => {
   // searchText is a local state variable
   const [searchText, setSearchText] = useState("");
   const [allRestaurants, setAllRestaurants] = useState([]);
   const [filteredRestaurants, setFilteredRestaurants] = useState([]);
+  const isOnline = useOnline();
 
   useEffect(() => {
     getRestaurants();
@@ -31,12 +26,15 @@ const Body = () => {
     setFilteredRestaurants(json?.data?.cards[2]?.data?.data?.cards);
   }
 
+  if (!isOnline)
+    return (
+      <h1 className="text-center font-bold text-2xl mt-4">
+        🔴 You are Offline, Please check your internet connection
+      </h1>
+    );
+
+  // Early Retrun
   if (!allRestaurants) return null;
-
-  // if (filteredRestaurants?.length === 0)
-  //   return <h1>No Matching Restaurants Found</h1>;
-
-  //Conditional Rendering
   return (
     <>
       <div className="h-full flex justify-center mx-auto mt-3">
@@ -60,6 +58,7 @@ const Body = () => {
           Search
         </button>
       </div>
+      {/* Conditional Rendering */}
       {allRestaurants?.length === 0 ? (
         <Shimmer />
       ) : (
