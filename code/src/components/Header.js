@@ -1,6 +1,7 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import Logo from "../../assets/logo.png";
 import { Link } from "react-router-dom";
+import UserContext from "../utils/UserContext";
 const Title = () => (
   <a href="/">
     <img className="w-[100px]" alt="logo" src={Logo} />
@@ -9,6 +10,7 @@ const Title = () => (
 
 const Header = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const { user } = useContext(UserContext);
   return (
     <header className="flex items-center justify-between p-4 bg-gray-900 text-white shadow shadow-lg">
       <Title />
@@ -30,6 +32,7 @@ const Header = () => {
         </ul>
       </nav>
       <div className="flex">
+        <span className="font-bold text-white">{user.name}</span>
         {isLoggedIn ? (
           <Link to="/">
             <button
