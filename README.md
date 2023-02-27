@@ -19,3 +19,5 @@
 ## [Chapter 10 - Jo dikhta hai vo bikta hai](https://github.com/ssk090/namaste-react-live-assignment/tree/master/10%20-%20Jo%20dikhta%20hai%20vo%20bikta%20hai)
 
 ## [Chapter 11 - Data is the new Oil](https://github.com/ssk090/namaste-react-live-assignment/tree/master/11%20-%20Data%20is%20the%20new%20Oil)
+
+## [Chapter 12 - Let's build our Store](https://github.com/ssk090/namaste-react-live-assignment/tree/master/12%20-%20Let's%20build%20our%20Store)
