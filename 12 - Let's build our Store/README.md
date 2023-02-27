@@ -192,3 +192,7 @@ export default counterSlice.reducer
 
 - In the above example, createSlice is used to define a counter slice with an initial state of 0. The reducers object contains two reducer functions, one for incrementing and one for decrementing the counter. The createSlice function generates the action types and action creators for these reducers automatically.
 - The increment and decrement action creators are exported from the slice and can be used in other parts of the application to dispatch actions. The counterSlice.reducer function is also exported and can be used as the reducer function for the counter slice in a Redux store.
+
+## Important
+![image](https://user-images.githubusercontent.com/22127725/221651839-7d98abec-449b-4941-ac47-814beaab368e.png)
+
