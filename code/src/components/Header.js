@@ -2,6 +2,9 @@ import { useState, useContext } from "react";
 import Logo from "../../assets/logo.png";
 import { Link } from "react-router-dom";
 import UserContext from "../utils/UserContext";
+import { useSelector } from "react-redux";
+import store from "../utils/store";
+
 const Title = () => (
   <a href="/">
     <img className="w-[100px]" alt="logo" src={Logo} />
@@ -11,6 +14,8 @@ const Title = () => (
 const Header = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const { user } = useContext(UserContext);
+  const cartItems = useSelector((store) => store.cart.items);
+  console.log(cartItems);
   return (
     <header className="flex items-center justify-between p-4 bg-gray-900 text-white shadow shadow-lg">
       <Title />
@@ -25,14 +30,16 @@ const Header = () => {
           <Link to="/contact">
             <li className="mr-6 hover:underline">Contact</li>
           </Link>
-          <li className="mr-6 hover:underline">Cart</li>
+          <Link to="/cart">
+            <li className="mr-6 hover:underline">Cart - {cartItems.length}</li>
+          </Link>
           <Link to="/instamart">
             <li className="mr-6 hover:underline">Instamart</li>
           </Link>
         </ul>
       </nav>
       <div className="flex">
-        <span className="font-bold text-white">{user.name}</span>
+        {/* <span className="font-bold text-white">{user.name}</span> */}
         {isLoggedIn ? (
           <Link to="/">
             <button
