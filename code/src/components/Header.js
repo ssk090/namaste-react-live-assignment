@@ -4,14 +4,16 @@ import { Link } from "react-router-dom";
 import UserContext from "../utils/UserContext";
 import { useSelector } from "react-redux";
 import store from "../utils/store";
+import useOnline from "../utils/useOnline";
 
 const Title = () => (
   <a href="/">
-    <img className="w-[100px]" alt="logo" src={Logo} />
+    <img data-testid="logo" className="w-[100px]" alt="logo" src={Logo} />
   </a>
 );
 
 const Header = () => {
+  const isOnline = useOnline();
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const { user } = useContext(UserContext);
   const cartItems = useSelector((store) => store.cart.items);
@@ -31,7 +33,9 @@ const Header = () => {
             <li className="mr-6 hover:underline">Contact</li>
           </Link>
           <Link to="/cart">
-            <li className="mr-6 hover:underline">Cart - {cartItems.length}</li>
+            <li data-testid="cart" className="mr-6 hover:underline">
+              Cart - {cartItems.length}
+            </li>
           </Link>
           <Link to="/instamart">
             <li className="mr-6 hover:underline">Instamart</li>
@@ -40,6 +44,12 @@ const Header = () => {
       </nav>
       <div className="flex">
         {/* <span className="font-bold text-white">{user.name}</span> */}
+        <div
+          data-testid="online-status"
+          className="flex justify-center items-center mr-5"
+        >
+          {isOnline ? "🟢" : "🔴"}
+        </div>
         {isLoggedIn ? (
           <Link to="/">
             <button

@@ -39,6 +39,7 @@ const Body = () => {
     <>
       <div className="h-full flex justify-center mx-auto mt-3">
         <input
+          data-testid="search-input"
           type="text"
           className="w-500 p-2 border border-gray-500 rounded-lg focus:bg-blue-100"
           placeholder="Search..."
@@ -49,6 +50,7 @@ const Body = () => {
           }}
         />
         <button
+          data-testid="search-btn"
           className="bg-blue-500 hover:bg-blue-600 text-white p-2 rounded-lg ml-4"
           onClick={() => {
             const data = filterData(searchText, allRestaurants);
@@ -63,6 +65,7 @@ const Body = () => {
         <Shimmer />
       ) : (
         <div
+          data-testid="res-list"
           className="flex flex-wrap justify-center"
           style={{ marginBottom: "75px" }}
         >
