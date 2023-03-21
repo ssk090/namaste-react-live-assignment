@@ -23,3 +23,7 @@
 ## [Chapter 12 - Let's build our Store](https://github.com/ssk090/namaste-react-live-assignment/tree/master/12%20-%20Let's%20build%20our%20Store)
 
 ## [Chapter 13 - Time for the test](https://github.com/ssk090/namaste-react-live-assignment/tree/master/13%20-%20Time%20for%20the%20test)
+
+## [Chapter 14 - Machine Coding Interview](https://github.com/ssk090/namaste-react-live-assignment/tree/master/mega-project/namaste-youtube)
+
+## [Chapter 15 - Building Youtube Advanced](https://github.com/ssk090/namaste-react-live-assignment/tree/master/mega-project/namaste-youtube)
