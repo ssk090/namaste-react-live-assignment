@@ -24,6 +24,3 @@
 
 ## [Chapter 13 - Time for the test](https://github.com/ssk090/namaste-react-live-assignment/tree/master/13%20-%20Time%20for%20the%20test)
 
-## [Chapter 14 - Machine Coding Interview](https://github.com/ssk090/namaste-react-live-assignment/tree/master/14%20%26%2015/namaste-youtube)
-
-## [Chapter 15 - Building Youtube Advanced](https://github.com/ssk090/namaste-react-live-assignment/tree/master/14%20%26%2015/namaste-youtube)
